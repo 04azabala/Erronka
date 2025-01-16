@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream-Tech</title>
+    <link rel="stylesheet" href="Style.css">
+   
+       <!--Laburpena: Web orrialde hau Header batean, main batean eta 3 sekziotan banatuta dago. Headerra goiko partea adierazten du (Hasiera, kategoriak, saldu eta kontaktuak) 
+       hori eta gero sekzio bat egonogo da berrietara sartzeko aukerarekin (diseinu aldetik ongi gelditzen zelako). Sekzio horren azpian "main" bat egongo da,
+        portadaren zati garrantzitsuena adierazten. "Main" horretan 27 produktu daude jarrita eta produktu bakoitzaren botoia sakatzean produktu horren orrialdera eramaten zaitu.
+        Produktuak eta gero "blog" txiki bat egongo da bi sekziotan banatuta. batak "prozesua" ikonoen bidez azaltzen dizu eta hurrengo sekzioa guri buruz informazioa esaten dizu.
+        Azkenik "Footer"-a dago, atal horretan gure telefono zenbakia, emaila..., aurkibidea, produktuen kategoriak eta textu legalag adierazten dute. -->
+</head>
+
+<body>
+     <header class="header"><!--Header hau goiko parte guztia hartzen du. Div klase batean banatuta dago "menu container" izenekoa. -->
+
+    <div class="menu container" >
+       
+            <a href="#" class="logo">Dream-Tech</a>
+            
+            
+
+        <nav class="navbar">
+
+        <!--navbar honetan goiko tituluak jartzeko balio du lista ez-ordenatu batean dago jarrita -->
+            <ul class="behekoa">
+                <li><a href="Index.html">Hasiera</a></li>
+                <li>
+                    <a href="#">Kategoriak</a>
+                        <!--submenu: kategoriak jartzen duen tokian mantentzean azpian agertuko-->
+                    <ul class="submenu">
+                            
+                        <li><a href="../portada/Kategoriak/Aurikularrak/Index2.html">Aurikularrak</a></li>
+                        <li><a href="../portada/Kategoriak/Kontsolak/Index3.html">Kontsolak</a></li>
+                        <li><a href="../portada/Kategoriak/Mugikorrak/Index4.html">Mugikorrak</a></li>
+                        <li><a href="../portada/Kategoriak/Portatilak-Pc/Index6.html">Portatilak/pc</a></li>
+                        <li><a href="../portada/Kategoriak/Teklatuak/Index7.html">Teklatuak</a></li>
+                    </ul>
+                </li>
+                <li><a href="../portada/Saldu/Saldu.html">Saldu</a></li>
+                 <li><a href="Kontaktuak/Kontaktuak.html">Kontaktuak</a></li>
+                <li><a href="../portada(english)/Index(English).html"  ><img src="images/Inglaterrabandera.webp" id="Hizkuntza1" height="20px" width="20px"></a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/car.svg" id="img-zesta" alt="zesta">
+        </div>
+    </div>
+    
+    </header>
+    <div class="header-content container"><!--Head-aren azpian informazioa gehitzeko. Berriak eramaten zaizun botoiarekin-->
+        <div class="header-img">
+            <img src="images/Msi.jpg" alt="">
+        </div>
+        <div class="header-txt">
+            <h1>Aparteko Eskaintza!</h1>
+            <p>Bestalde, teknologiari buruzko azken berriak.</p>
+            <a href="../portada/Berriak/berriak.html" class="btn-1">Berriak</a>
+        </div>
+    </div>
+
+        <!--------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="ofert container"><!--hurregon atala 'section' izenekoa goiko hiru produktu independiente hartzen ditu. klasea 'ofert container'. 'container' klasea estiloak haurretik definituta dauzka. 
+        'section' hau div-etan banatuta dago eta div bakoitza klase berdina dauka 'ofert1'.--->
+        
+        
+        <div class="ofert-1"> <!--'ofert1' bakoitzak 2 div-etan banatuta daude (argazkia eta textua). "textuaren barruan botoia"-->
+                <div class="ofert-img">
+                    <img src="images/Asus.png" alt="" width="250" height="100">
+                </div>
+                <div class="ofert-txt">
+                    <h3>Asus Rog Ally</h3>
+                    <a href="produktu/AsusRogAlly/AsusRogAlly.html" class="btn-2">Informazioa</a>
+                </div> 
+
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/NintendoSwitc.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Nintendo Switch Oled</h3>
+                <a href="produktu/NintendoSwitch/NintendoSwitch.html" class="btn-2">Informazioa</a>
+            </div> 
+
+    </div>
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="images/Nintendo3DS.png" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Nintendo 3DS</h3>
+            <a href="produktu/Nintendo3D/Nintendo3DS.html" class="btn-2">Informazioa</a>
+        </div> 
+
+</div>
+
+    </div>
+        
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <main class="produktuas container"> <!--main honek horrialde guztiko produktu guztiak hartzen ditu eta 'produktuas' klasea estiloak definitzen dio. (Main Elementu honek adierazten digu bere barruan dagoena orriaren eduki nagusia dela)-->
+        <h2>Produktuak</h2>
+
+        <div class="produktua-content"><!--Div honek produktu guztiak bloke elementu bat bezala hartzen du-->
+
+            <div class="produktua"><!--Div hau klase ezberdinekoa da 'produktua'izenekoa. display= "grid" erabiliz produktuak hirunaka banatuta daude web-ean-->
+                <img src="images/XboxS.png" alt="" >
+                <div class="produktua-txt">
+                    <h3>Xbox Series S</h3>
+                    <p></p>
+                    <p class="precio">264€</p>
+                    <a href="produktu/XboxSeriesS/XboxSeriesS.html" class="btn-2" data-id="1">Informazioa</a>
+                </div>
+
+            </div>
+
+            <div class="produktua">
+                <img src="images/XboxX.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Xbox Series X</h3>
+                    <p></p>
+                    <p class="precio">510€</p>
+                    <a href="produktu/XboxSeriesX/XboxSeriesX.html" class="btn-2" data-id="2"i>Informazioa</a>
+                </div>
+
+            </div>
+
+            <div class="produktua">
+                <img src="images/ps5.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Sony Playstation 5 Slim</h3>
+                    <p></p>
+                    <p class="precio">440.99€</p>
+                    <a href="produktu/Ps5Slim/Ps5Slim.html" class="btn-2" data-id="3">Informazioa</a>
+                </div>
+
+            </div>
+
+            <div class="produktua">
+                <img src="images/PortatilLenovopng.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Lenovo</h3>
+                    <p></p>
+                    <p class="precio">560.93€</p>
+                    <a href="produktu/Lenovo/Lenovo.html" class="btn-2" data-id="4">Informazioa</a>
+                </div>
+
+            </div>
+
+            <div class="produktua">
+                <img src="images/TecladoLogitech.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Logitech G G413 SE</h3>
+                    <p></p>
+                    <p class="precio">63.21€</p>
+                    <a href="produktu/Logitech G413 SE/Logitech G413 SE.html" class="btn-2" data-id="5">Informazioa</a>
+                </div>
+
+            </div>
+
+            <div class="produktua">
+                <img src="images/JBLAuriculares.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>JBL Tune 660NC</h3>
+                    <p></p>
+                    <p class="precio">50.32€</p>
+                    <a href="produktu/JBL TUNE 660NC/JBL TUNE 660NC.html" class="btn-2" data-id="6">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/RedmiNote13.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Xiaomi redmi note 13</h3>
+                    <p></p>
+                    <p class="precio">138€</p>
+                    <a href="produktu/XiaomiRedmiNote13/XiaomiRedmiNote13.html" class="btn-2" data-id="7">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/teclaHP.jpg" alt="">
+                <div class="produktua-txt">
+                    <h3>HP 3L1E7AA</h3>
+                    <p></p>
+                    <p class="precio">20.85€</p>
+                    <a href="produktu/HP 3L1E7AA/HP3L1E7AA.html" class="btn-2" data-id="8">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/steamdeck.jpg" alt="">
+                <div class="produktua-txt">
+                    <h3>Steam Deck</h3>
+                    <p></p>
+                    <p class="precio">545.52€</p>
+                    <a href="produktu/Steam Deck/Steam Deck.html" class="btn-2" data-id="9">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/AcerAspire3.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>ACER Aspire 3</h3>
+                    <p></p>
+                    <p class="precio">468.43€</p>
+                    <a href="produktu/Acer Aspire 3/Acer Aspire 3.html" class="btn-2" data-id="10">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/samsung.jpeg" alt="">
+                <div class="produktua-txt">
+                    <h3>Samsung Galaxy A15 LTE</h3>
+                    <p></p>
+                    <p class="precio">138.32€</p>
+                    <a href="produktu/Samsung Galaxy A15 LTE/Samsung Galaxy A15 LTE.html" class="btn-2" data-id="11">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/RedmiBuds4webp.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Xiaomi Redmi Buds 4 Lite</h3>
+                    <p></p>
+                    <p class="precio">11.99€</p>
+                    <a href="produktu/Xiaomi Redmi buds 4 lite/Xiaomi Redmi buds 4 lite.html" class="btn-2" data-id="12">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/trustGXT.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Trust GXT 833W Thado</h3>
+                    <p></p>
+                    <p class="precio">18.99€</p>
+                    <a href="produktu/Trust GXT 833W thado/Trust GXT 833W thado.html" class="btn-2" data-id="13">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/LgUltrawide.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>LG 29WQ600 UltraWide</h3>
+                    <p></p>
+                    <p class="precio">160.7€</p>
+                    <a href="produktu/Lg 29WQ600 Ultra wide/LG 29WQ600 Ultra wide.html" class="btn-2" data-id="14">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/MotorolaG24.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Motorola G24</h3>
+                    <p></p>
+                    <p class="precio">118.99€</p>
+                    <a href="produktu/Motorola g24/Motorola G24.html" class="btn-2" data-id="15">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/Iphone13.jpg" alt="">
+                <div class="produktua-txt">
+                    <h3>APPLE IPHONE 13</h3>
+                    <p></p>
+                    <p class="precio">400€</p>
+                    <a href="produktu/IPhone 13/Iphone13.html" class="btn-2" data-id="16">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/Samsung-Galaxy-S24.png.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p></p>
+                    <p class="precio">215.67€</p>
+                    <a href="produktu/Samsung Galaxy S24/SamsungGalaxyS24.html" class="btn-2" data-id="17">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/trustGxt835.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Trust GXT</h3>
+                    <p></p>
+                    <p class="precio">60.54€</p>
+                    <a href="produktu/TrustGxt835/TrustGxt835.html" class="btn-2" data-id="18">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/SamsungGalaxyA35png.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Samsung Galaxy A35</h3>
+                    <p></p>
+                    <p class="precio">300€</p>
+                    <a href="produktu/Samsung Galaxy A35/SamsungGalaxyA35.html" class="btn-2" data-id="19">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/OPPOreno12.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Oppo Reno 12</h3>
+                    <p></p>
+                    <p class="precio">371.68€</p>
+                    <a href="produktu/OPPO Reno 12/OppoReno12.html" class="btn-2" data-id="20">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/OnePlus 12R.png" alt="">
+                <div class="produktua-txt">
+                    <h3>OnePlus 12R</h3>
+                    <p></p>
+                    <p class="precio">488.99€</p>
+                    <a href="produktu/OnePlus12R/OnePlus12R.html" class="btn-2" data-id="21">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/MSIThinpng.png" alt="">
+                <div class="produktua-txt">
+                    <h3>MSI Thin</h3>
+                    <p></p>
+                    <p class="precio">688.79€</p>
+                    <a href="produktu/MSIThin/MSIThin.html" class="btn-2" data-id="21">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/MK2jpg.jpg" alt="">
+                <div class="produktua-txt">
+                    <h3>PC MK2</h3>
+                    <p></p>
+                    <p class="precio">900.60€</p>
+                    <a href="produktu/MK2Pro4K/MK2Pro4K.html" class="btn-2" data-id="22">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/iPIphone16Pro.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>Iphone 16 pro max</h3>
+                    <p></p>
+                    <p class="precio">1400.67€</p>
+                    <a href="produktu/IPhone 16 Pro Max/Iphone 16 Pro Max.html" class="btn-2" data-id="23">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/HPChromebook.webp" alt="">
+                <div class="produktua-txt">
+                    <h3>HP Chromebook</h3>
+                    <p></p>
+                    <p class="precio">360.89€</p>
+                    <a href="produktu/HPChromeBook/HPChromeBook.html" class="btn-2" data-id="24">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/BlackViewShark8.jpg" alt="">
+                <div class="produktua-txt">
+                    <h3>Black View Shark 8</h3>
+                    <p></p>
+                    <p class="precio">148.99€</p>
+                    <a href="produktu/BlackViewShark8/BlackViewShark8.html" class="btn-2" data-id="25">Informazioa</a>
+                </div>
+
+            </div>
+            <div class="produktua">
+                <img src="images/AsusVivobook.png" alt="">
+                <div class="produktua-txt">
+                    <h3>Asus Vivobook</h3>
+                    <p></p>
+                    <p class="precio">480.21€</p>
+                    <a href="produktu/AsusVivoBook/AsusVivoBook.html" class="btn-2" data-id="26">Informazioa</a>
+                </div>
+
+            </div>
+            
+            
+            
+
+            
+        </div><!--Produktu zatiaren amaiera-->
+
+    </main>
+
+    <div class="izenburua"><strong>GURI BURUZ:</strong></div><!--Hemen "guri buruz" edo blog-a hasten da. hurrengo lerroan ikusten den bezala section bat erabili dut.-->
+    <section class="icons container" >
+        <div class="icon-1">
+            <div class="icon-img" >
+                <img src="images/Compra.webp" width="75px" height="75px">
+            </div>
+        </div>
+        <div class="icon-txt">
+            <h3>EROSI </h3>
+            <p>
+                Zure produktua erosten dugu.
+            </p>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img" >
+                <img src="images/reci.png" width="75px" height="75px">
+            </div>
+        </div>
+        <div class="icon-txt">
+            <h3>BIRZIKLATU </h3>
+            <p>
+                Zure produktua berregokitzen dugu.
+            </p>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img" >
+                <img src="images/saldu2png.png"  width="75px" height="75px">
+            </div>
+        </div>
+        <div class="icon-txt">
+            <h3>SALDU </h3>
+            <p>
+                Produktu berdina prezio hobeagoan.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="blog container">
+        
+        <div class="blog-1">
+            <img src="images/empresa.jpg" alt="">
+            <h3>Gure Enpresa</h3>
+            <ol>
+                <li>- Online Plataforma bat da.</li>
+                <li>- Produktuak erosi edo saldu daitezke</li>
+                <li>- Ditugun produktuak berregokitu eta saldu egiten dugu.</li>
+            </ol>
+          
+        </div>
+
+        <div class="blog-1">
+            <img src="images/langileak.png" alt="">
+            <h3>Lan Modua</h3>
+            <ol>
+                <li>- Bezeroei dirua eskaintzen diegu beraien produktuengatik.</li>
+                <li>- Bezeroek produktuak saltzen badizkigute produktuak konprobatu eta gaizki badaude konpontzen ditugu.</li>
+                <li>- Hornitzaileak konponenteak ematen dizkigute gure langileek gailuak konpontzeko.</li>
+                <li>- Produktuak bezeroei bidaltzen dizkiegu.</li>
+            </ol>
+          
+        </div>
+        <div class="blog-1">
+            <img src="images/zerbitzuak.jpeg" alt="">
+            <h3>Zerbitzuak</h3>
+            <ol>
+                <li>- Konponenteak.</li>
+                <li>- Salmenta(Online).</li>
+                <li>- Garantia ( 2 Urte ).</li>
+                <li>- Garraioa dohain.</li>
+                <li>- 30 Egun Proba</li>
+            </ol>
+          
+        </div>
+
+    </section>
+
+
+    <footer class="footer" id="Kontaktuak1"><!--Azkenik footerra dago. Web-aren azpian egongo da kokatuta-->
+        <div class="footer-content container">
+            <div class="informazioa">
+                <h3>Dream-Tech
+                    
+                </h3>
+                <ul>
+                    <li>Ordizi Mallutz Kalea, 24, 20240 Ordizia, Gipuzkoa</li><br>
+                    <li>20240 Ordizia (Gipuzkoa)</li><br>
+                    <li>Tel.: (+34) 948 57 60 56</li><br>
+                    <li>E-mail: Dream-tech@goierrienpresa.com</li><br>
+                </ul>
+            </div>
+
+            <div class="informazioa">
+                <h3>Aurkibidea
+                   
+                
+
+                </h3>
+                <ul>
+                    <li>Hasiera</li><br>
+                    <li>Produktua</li><br>
+                    <li>Saldu</li><br>
+                    <li>Zerbitzuak</li><br>
+                    <li>Hizkuntza</li><br>
+                    <li>Kontaktuak</li><br>
+                </ul>
+            </div>
+
+            <div class="informazioa">
+                <h3>Produktuak
+                    
+                    
+                </h3>
+                <ul>
+                    <li>Mugikorrak</li><br>
+                    <li>Portatilak/ Ordenagailuak</li><br>
+                    <li>Aurikularrak</li><br>
+                    <li>Periferikoak</li><br>
+                    <li>Kontsolak</li><br>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Textu Legalak
+                   
+                </h3>
+                <ul>
+                    <li>Ohar Legalak</li><br>
+                    <li>Pribatutasun Politka</li><br>
+                    <li>Cookie Politika</li><br>
+                   
+                </ul>
+            </div>
+        </div>
+</footer>
+
+
+
+    
+    
+</body>
+</html>

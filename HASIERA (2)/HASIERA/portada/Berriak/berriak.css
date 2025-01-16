@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+font-family: "Oswald", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 10px;
+    background-color: white;
+    padding: 45px 0;
+    position: sticky;
+    top: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 30px;
+    color: #111111;
+    display: block;
+
+}
+.navbar > li {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    padding: 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: lightgray;
+}
+
+.submenu {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: black 1px solid;
+}
+
+.behekoa > li:hover .submenu {
+    display: block;
+    
+}
+
+.submenu li {
+    width: 155px; /* Ancho del submenú */
+}
+
+.submenu a {
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+
+.submenu li {
+    width: 155px; /* Ancho del submenú */
+}
+
+.submenu a {
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.berriak{
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:  auto;
+    padding-bottom: 100px;
+    width: 60%;
+    margin: auto;
+    
+
+    
+}
+.titulua{
+    font-size: 50px;
+}
+.berria{
+    display: grid;
+    grid-template-columns: 40% auto;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    }
+    .argazkia > img{
+        height: 100%;
+    }
+    .information > h3{
+        text-transform: uppercase;
+    }
+    .information{
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+
+
+.footer {
+    padding: 50px 0;
+    background-color: #111111;
+    font-size: 15px;
+}
+.footer-content {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.informazioa h3{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.informazioa a{
+    font-size: 16px;
+    color: #DCDCDC;
+    display: block;
+    margin-bottom: 10px;
+}
